@@ -43,4 +43,39 @@ A partir de estos datos, hemos obtenido los siguientes:
  - User_pause_timestamp_3: Tiempo transcurrido desde la antepenúltima vez que respondió el alumno a una pregunta
  - User_pause_timestamp_ratio_1: (user_pause_timestamp_1 + 1)/ (user_pause_timestamp_2 + 1)
  - %_acierto_usuario: acierto total del alumno / preguntas totales del alumno
- - 
+ - intentos: Cuantas veces ha respondido a la misma pregunta
+ - user_pause_timestamp_incorrect: Tiempo transcurrido desde la última vez que fallo una pregunta
+ - correction: (user_pause_timestamp_1 + 1) / (user_pause_timestamp_incorrect + 1) + prior_question_had_explanation + intentos
+ - mean_question_accuracy: Tasa de acierto media historica de la pregunta en cuestión
+ - explanation_q_avg: Porcentaje de alumnos que han visto la explicación de por que han fallado en el la pregunta en cuestión
+ - elapsed_time_q_avg: Tiempo medio que pasa tras responder la última pregunta cuando responden la pregunta en cuestión
+ - user_pause_timestamp_MEAN_RATIO: user_pause_timestamp_1/((user_pause_timestamp_1 + user_pause_timestamp_2 + user_pause_timestamp_3)/3 + 1)
+ - ELO: Sistema de ELO modificado derivado del ajedrez
+ - %_media_armónica: 2*%_acierto_usuario']*mean_question_accuracy']/(%_acierto_usuario + mean_question_accuracy)
+ - expected_prob: Probabilidad de acierto en base al ELO -> 1 / (1 + 9**(((1 - mean_question_accuracy) * 100 - ELO)/15))
+ - elapsed_time_u_avg: Tiempo medio que pasa tras responder la última pregunta de un alumno
+ - CUMULATIVE_ELO_USER: Suma acumulada del histórico de ELOs del alumno
+ - std_accuracy: Desviación tipica de la tasa de acierto de la pregunta en cuestión
+ - cont_preguntas_user: Contador de preguntas respondidas por el alumno
+ - %_acierto_pregunta_CONT: Tasa de acierto media instantanea de la pregunta en cuestión
+
+Está es la importancia causal de predicción de característica tras procesarlo en el modelo LGBM:
+![image](https://user-images.githubusercontent.com/47561659/111660190-1ea54780-880e-11eb-8e50-7eb188dbcb11.png)
+## Modelo LGBM
+
+Estos son los parámetros de entrenamiento elegidos para entrenar el modelo:
+```
+params = {'num_leaves': 350,
+          'max_bin':700,
+          'min_child_weight': 0.03454472573214212,
+          'feature_fraction': 0.7,
+          'objective': 'binary',
+          'max_depth': -1,
+          'learning_rate': 0.05,
+          'boosting_type': "gbdt",
+          'bagging_seed': 11,
+          'metric': 'auc',
+          'reg_alpha': 0.3899927210061127,
+          'reg_lambda': 0.6485237330340494,
+          'random_state': 47}
+```
