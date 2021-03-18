@@ -79,6 +79,7 @@ params = {'num_leaves': 350,
           'reg_lambda': 0.6485237330340494,
           'random_state': 47}
 ```
+Tras 350 rondas de entrenamiento, obtenemos:
 
 ![image](https://user-images.githubusercontent.com/47561659/111665514-1b608a80-8813-11eb-8769-ae2c740987fb.png)
 
