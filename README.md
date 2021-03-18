@@ -59,11 +59,11 @@ A partir de estos datos, hemos obtenido los siguientes:
  - cont_preguntas_user: Contador de preguntas respondidas por el alumno
  - %_acierto_pregunta_CONT: Tasa de acierto media instantanea de la pregunta en cuestión
 
-Está es la importancia causal de predicción de característica tras procesarlo en el modelo LGBM:
+Tras procesar las anteriores características en el modelo LGBM, obtenemos el siguiente ranking de importancia causal de predicción:
 ![image](https://user-images.githubusercontent.com/47561659/111660190-1ea54780-880e-11eb-8e50-7eb188dbcb11.png)
 ## Modelo LGBM
 
-Estos son los parámetros de entrenamiento elegidos para entrenar el modelo:
+Para entrenar este modelo, esta es la configuración paramétrica que mejores resultados me ha dado:
 ```
 params = {'num_leaves': 350,
           'max_bin':700,
