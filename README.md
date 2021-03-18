@@ -1,4 +1,4 @@
-# Riiid-Answer-Correctness-Prediction
+# Riiid! Answer Correctness Prediction
 Personalización de la experiencia de aprendizaje de los estudiantes mediante el desarrollo de un modelo que predice la probabilidad de acertar en la siguiente pregunta en base al desempeño pasado del estudiante.
 
 Esta es la solución que me ha permitido clasificarme en el top 9% mundial en la competición de Kaggle: [Riiid! Answer Correctness Prediction](https://www.kaggle.com/c/riiid-test-answer-prediction/overview).
