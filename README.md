@@ -83,6 +83,7 @@ params = {'num_leaves': 350,
 El modelo SAKT está basado en el siguiente [paper](https://arxiv.org/pdf/1907.06837.pdf).
 Soluciona uno de los principales problemas que surgian al aplicar un modelo secuencial como las RNN en este tipo de problemas: Poder generalizar a partir de una escasez relativa de datos pasados. Estos se consigue gracias a la capa de 'Atención'.
 Arquitectura:
+
 ![image](https://user-images.githubusercontent.com/47561659/111663617-49dd6600-8811-11eb-85a9-4248490b344d.png)
 ![image](https://user-images.githubusercontent.com/47561659/111663691-5792eb80-8811-11eb-8fa6-02d645ea7537.png)
 
