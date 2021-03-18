@@ -36,3 +36,11 @@ Originalmente, los datos proporcionados por Riiid! son los siguientes:
  - part: top level category code for the lecture.
  - tag: one tag codes for the lecture. The meaning of the tags will not be provided, but these codes are sufficient for clustering the lectures together.
  - type_of: brief description of the core purpose of the lecture
+
+A partir de estos datos, hemos obtenido los siguientes:
+ - User_pause_timestamp_1: Tiempo transcurrido desde la última vez que respondió el alumno a una pregunta
+ - User_pause_timestamp_2: Tiempo transcurrido desde la penúltima vez que respondió el alumno a una pregunta
+ - User_pause_timestamp_3: Tiempo transcurrido desde la antepenúltima vez que respondió el alumno a una pregunta
+ - User_pause_timestamp_ratio_1: (user_pause_timestamp_1 + 1)/ (user_pause_timestamp_2 + 1)
+ - %_acierto_usuario: acierto total del alumno / preguntas totales del alumno
+ - 
