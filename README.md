@@ -92,5 +92,9 @@ Arquitectura:
 ![image](https://user-images.githubusercontent.com/47561659/111663617-49dd6600-8811-11eb-85a9-4248490b344d.png)
 ![image](https://user-images.githubusercontent.com/47561659/111663691-5792eb80-8811-11eb-8fa6-02d645ea7537.png)
 
+Tras 12 rondas de entrenamiento, obtenemos:
+
+![image](https://user-images.githubusercontent.com/47561659/111679641-ad6f8f80-8821-11eb-8d0e-745440a1df32.png)
+
 # Agradecimientos
 A Kaggle y Riiid! por organizar esta desafiante competición
