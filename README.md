@@ -79,3 +79,7 @@ params = {'num_leaves': 350,
           'reg_lambda': 0.6485237330340494,
           'random_state': 47}
 ```
+## Modelo SAKT
+El modelo SAKT está basado en el siguiente [paper](https://arxiv.org/pdf/1907.06837.pdf)
+# Agradecimientos
+A Kaggle y Riiid! por organizar esta desafiante competición
