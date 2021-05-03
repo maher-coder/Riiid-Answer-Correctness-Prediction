@@ -52,7 +52,7 @@ A partir de estos datos, hemos obtenido los siguientes:
  - **elapsed_time_q_avg**: Tiempo medio que pasa tras responder la última pregunta cuando responden la pregunta en cuestión
  - **user_pause_timestamp_MEAN_RATIO**: user_pause_timestamp_1/((user_pause_timestamp_1 + user_pause_timestamp_2 + user_pause_timestamp_3)/3 + 1)
  - **ELO**: Sistema de ELO modificado derivado del ajedrez
- - **%_media_armónica**: 2*%_acierto_usuario']*mean_question_accuracy']/(%_acierto_usuario + mean_question_accuracy)
+ - **%_media_armónica**: 2*%_acierto_usuario*mean_question_accuracy/(%_acierto_usuario + mean_question_accuracy)
  - **expected_prob**: Probabilidad de acierto en base al ELO -> 1 / (1 + 9**(((1 - mean_question_accuracy) * 100 - ELO)/15))
  - **elapsed_time_u_avg**: Tiempo medio que pasa tras responder la última pregunta de un alumno
  - **CUMULATIVE_ELO_USER**: Suma acumulada del histórico de ELOs del alumno
